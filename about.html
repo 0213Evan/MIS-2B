@@ -7,8 +7,20 @@
 	<style type="text/css">
 		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
 		h1 {color:blue; font-size:60px;}
-		h2 {color:#33ff33; font-size:40px;}
+		h2 {color:#0AF626; font-size:40px;}
 	</style>
+		<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Tzyy-Ching Yang";
+		}
+	</script>
+
 
 </head>
 <body>
@@ -16,13 +28,13 @@
 		<tr>
 			<td>
 
-	<img src="cliff.jpg"width="110%"></img>
+	<img src="cliff.jpg"width="110%"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 	</td>
 
 			<td>
 
 				<h1>賴期騰</h1>
-				<h2>TENG-LAI CHI</h2> 
+				<h2 id="h2text">TENG-LAI CHI</h2> 
 			</td>
 		</tr>
 	</table>
